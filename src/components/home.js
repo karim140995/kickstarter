@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
+
 class Home extends Component {
   render(){
     return(
@@ -6,7 +8,7 @@ class Home extends Component {
         <div className="swiper-container hero-slider">
         <div className="swiper-wrapper">
             <div className="swiper-slide hero-content-wrap">
-                <img src="images/hero.jpg" alt="" />
+                <img src="images/startup.jpeg" alt="" />
 
                 <div className="hero-content-overlay position-absolute w-100 h-100">
                     <div className="container h-100">
@@ -60,7 +62,7 @@ class Home extends Component {
                              </figure>
 
                              <header className="entry-header">
-                                 <h3 className="entry-title">Dance & Music</h3>
+                                 <h3 className="entry-title">Sponsor project</h3>
                              </header>
 
                              <div className="entry-content">
@@ -76,7 +78,7 @@ class Home extends Component {
                                  <img src="images/charity-white.png" alt=""/>
                              </figure>
 
-                                 <h3 className="entry-title">Online Conference</h3>
+                                 <h3 className="entry-title">Fundraise project</h3>
                                  <header className="entry-header">
                              </header>
 
@@ -94,20 +96,13 @@ class Home extends Component {
                <div className="col-12 col-sm-6">
                    <div className="upcoming-events">
                        <div className="section-heading">
-                           <h2 className="entry-title">Upcoming Events</h2>
+                           <h2 className="entry-title">Tendences</h2>
                        </div>
 
                        <div className="event-wrap d-flex flex-wrap justify-content-between">
                            <figure className="m-0">
-                               <img src="images/event-1.jpg" alt="" />
+                               <img src="images/bm3.jpg" alt="" />
                            </figure>
-
-
-                       <div className="event-wrap d-flex flex-wrap justify-content-between">
-                           <figure className="m-0">
-                               <img src="images/event-3.jpg" alt="" />
-                           </figure>
-
                            <div className="event-content-wrap">
                                <header className="entry-header d-flex flex-wrap align-items-center">
                                    <h3 className="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
@@ -129,6 +124,35 @@ class Home extends Component {
                                    <a href="#">Read More</a>
                                </div>
                            </div>
+
+
+                       <div className="event-wrap d-flex flex-wrap justify-content-between">
+                           <figure className="m-0">
+                               <img src="images/bw1.jpg" alt="" />
+                           </figure>
+
+                           <div className="event-content-wrap">
+                               <header className="entry-header d-flex flex-wrap align-items-center">
+                                   <h3 className="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
+
+                                   <div className="posted-date">
+                                       <a href="#">Aug 25, 2018 </a>
+                                   </div>
+
+                                   <div className="cats-links">
+                                       <a href="#">Ball Room New York</a>
+                                   </div>
+                               </header>
+
+                               <div className="entry-content">
+                                   <p className="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                               </div>
+
+                               <div className="entry-footer">
+                                
+                                   <a href="#">Read More</a>
+                               </div>
+                           </div>
                            </div>
                        </div>
                    </div>
@@ -136,17 +160,17 @@ class Home extends Component {
                <div className="col-12 col-sm-6">
                    <div className="featured-cause">
                        <div className="section-heading">
-                           <h2 className="entry-title">Featured Cause</h2>
+                           <h2 className="entry-title">Recent idea</h2>
                        </div>
 
                        <div className="cause-wrap d-flex flex-wrap justify-content-between">
                            <figure className="m-0">
-                               <img src="images/featured-causes.jpg" alt=""/>
+                               <img src="images/bm1.png" alt=""/>
                            </figure>
 
                            <div className="cause-content-wrap">
                                <header className="entry-header d-flex flex-wrap align-items-center">
-                                   <h3 className="entry-title w-100 m-0"><a href="#">Fundraiser for Kids</a></h3>
+                                   <h3 className="entry-title w-100 m-0"><a href="#">John Smith</a></h3>
 
                                    <div className="posted-date">
                                        <a href="#">Aug 25, 2018 </a>
@@ -162,29 +186,12 @@ class Home extends Component {
                                </div>
 
                                <div className="entry-footer mt-5">
-                                   <a href="#" className="btn gradient-bg mr-2">Donate Now</a>
+                               <Link eventKey={3} componentClass={Link} to="/project" className="btn gradient-bg mr-2" style={{marginBottom : '20px' }}>Read more</Link>
+
                                </div>
                            </div>
 
-                           <div className="fund-raised w-100">
-                               <div className="featured-fund-raised-bar barfiller">
-                                   <div className="tipWrap">
-                                       <span className="tip"></span>
-                                   </div>
-
-                                   <span className="fill" data-percentage="83"></span>
-                               </div>
-
-                               <div className="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
-                                   <div className="fund-raised-total mt-4">
-                                       Raised: $56 880
-                                   </div>
-
-                                   <div className="fund-raised-goal mt-4">
-                                       Goal: $70 000
-                                   </div>
-                               </div>
-                           </div>
+                        
                            </div>
                    </div>
                </div>

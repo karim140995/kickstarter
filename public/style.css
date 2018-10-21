@@ -193,7 +193,7 @@ a:hover, a:active {
 .site-navigation ul li a {
     display: block;
     padding: 16px 0;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 1;
     color: #262626;
@@ -755,7 +755,7 @@ ul.tabs-nav .tab-nav.active {
 .home-page-welcome {
     position: relative;
     padding: 96px 0;
-    background: url("images/welcome-bg.jpg") no-repeat center;
+    background: url("images/startup.jpeg") no-repeat center;
     background-size: cover;
     z-index: 99;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import Project from './components/project';
@@ -9,11 +10,18 @@ import Home from './components/home';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <Header />
-        <Home />
-        <Footer />
+        <Router>
+        <div>
+          <Route component={Home} exact path="/" />
+          <Route component={Project} path="/project" />
+          <Route component={Donation} path="/donation" />
+        </div>
+      </Router>
+      <Footer />
       </div>
+      
     );
   }
 }

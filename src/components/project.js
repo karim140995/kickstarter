@@ -1,11 +1,11 @@
 import React, {Component} from 'react' ;
 import ProgressBar from './progressBar';
-
+import { Link } from 'react-router-dom';
 const VideoComponent = (props) => {
   return (
     <div>
     <video width="100%" height="400" controls>
-<source src="movie.mp4" type="video/mp4" />
+<source src="movie.mp4" type="video/mp4" placeholder="Jest a test"/>
 <source src="movie.ogg" type="video/ogg" />
 </video>
     </div>
@@ -37,9 +37,7 @@ const UserDescription = (props) => {
   return (
     <div>
     <div className="cause-wrap d-flex flex-wrap justify-content-between">
-                    <figure className="m-0">
-                        <img src="images/businessman_PNG6564.png" alt="" className="user-profile"/>
-                    </figure>
+                    
 
                     <div className="cause-content-wrap">
                         <header className="entry-header d-flex flex-wrap align-items-center">
@@ -68,7 +66,7 @@ const DonateButton = (props) => {
   return (
     <div>
         <ProgressBar max="70.000" currentValue="48.500" />
-        <a href="#" className="btn gradient-bg mr-2" style={{marginBottom : '20px' }}>Donate Now</a>
+        <Link eventKey={3} componentClass={Link} to="/donation" className="btn gradient-bg mr-2" style={{marginBottom : '20px' }}>Donate Now</Link>
     </div>
   )
 }
